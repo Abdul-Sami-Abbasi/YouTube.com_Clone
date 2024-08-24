@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 11</title>
+    <style>
+        .main-div1{
+            display: grid;
+            grid-template-columns: 200px 75px;
+        }
+
+        .main-div2{
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+        }
+
+        .main-div3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+
+
+
+        .complete-section1{
+            width: 150px;
+            box-shadow: 0.1px 0.1px 7px;
+            height: 260px;
+            display: inline-block;
+            margin-right: 10px;
+            padding-bottom: 5px;
+        }
+        
+        p{
+            font-family: Arial;
+        }
+
+        .img-section{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: right;
+        }
+
+        .div1{
+            width: 150px;
+            height: 150px;
+        }
+
+        .div2{
+            width: 150px;
+        }
+
+        .img2{
+            width: 25px;
+            height: 25px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 13px;
+            margin-left: 7px;
+        }
+
+        .div4{
+            
+            height: 100%;
+            position: static;
+            vertical-align: 7px;
+        }
+
+        button{
+            display: block;
+            color: white;
+            background-color: rgb(16, 108, 237);
+            border: none;
+            height: 30px;
+            width: 90px;
+            border-radius: 3px;
+            margin-left: 7px;
+            margin-top: 5px;
+        }
+
+        .p1{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            margin-left: 7px;
+        }
+
+        .p2{
+            
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: rgb(96,96,96);
+            font-size: 14px;
+            margin-left: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main-div1">
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightpink;">75px</div>
+    </div>
+
+    <div class="main-div2">
+        <div style="background-color: lightblue;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightblue;">col3</div>
+    </div>
+
+    <div class="main-div3">
+        <div style="background-color: lightblue;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightblue;">col3</div>
+        <div style="background-color: lightpink;">col4</div>
+        <div style="background-color: lightblue;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightblue;">col3</div>
+        <div style="background-color: lightpink;">col4</div>
+    </div>
+
+    <hr>
+
+    <div style="display: grid; grid-template-columns: 250px 250px 250px; align-items: center;">
+        <div><div class="complete-section1">
+
+            <div class="div1">
+                <img class="img-section" src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="">
+            </div>
+            <div class="div2">
+    
+                <p class="p1">Oliver</p>
+                <div class="div3"><img class="img2" src="https://images.unsplash.com/photo-1582456891925-a53965520520?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGN1dGUlMjBkb2d8ZW58MHx8MHx8fDA%3D" alt=""></div><div class="div4"><p class="p2">2 mutual friends</p></div>
+                <button>Add Friend</button>
+    
+            </div>
+    
+        </div></div>
+        <div><div class="complete-section1">
+
+            <div class="div1">
+                <img class="img-section" src="https://s3.india.com/wp-content/uploads/2015/10/10-wallpaperhd1.jpg" alt="">
+            </div>
+            <div class="div2">
+    
+                <p class="p1">Rex</p>
+                <div class="div3"><img class="img2" src="https://images.unsplash.com/photo-1582456891925-a53965520520?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGN1dGUlMjBkb2d8ZW58MHx8MHx8fDA%3D" alt=""></div><div class="div4"><p class="p2">5 mutual friends</p></div>
+                <button>Add Friend</button>
+    
+            </div>
+    
+        </div></div>
+        <div><div class="complete-section1">
+
+            <div class="div1">
+                <img class="img-section" src="https://media.istockphoto.com/id/1267021092/photo/funny-winking-kitten.jpg?s=612x612&w=0&k=20&c=9PoFYkqKZ30F_ubxX90_azwsR22ENwrFnOjxV0RaoTo=" alt="">
+            </div>
+            <div class="div2">
+    
+                <p class="p1">Miami</p>
+                <div class="div3"><img class="img2" src="https://images.unsplash.com/photo-1582456891925-a53965520520?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGN1dGUlMjBkb2d8ZW58MHx8MHx8fDA%3D" alt=""></div><div class="div4"><p class="p2">3 mutual friends</p></div>
+                <button>Add Friend</button>
+    
+            </div>
+    
+        </div></div>
+    </div>
+
+</body>
+</html>
